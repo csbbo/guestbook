@@ -1,0 +1,67 @@
+@import './color.less';
+* {
+    margin: 0;
+    padding: 0;
+}
+#app {
+    height: 100%;
+    //font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+}
+html {
+    height: 100%;
+    min-width: 1200px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+body {
+    height: 100%;
+    background-color: @bg-grey;
+    color: #333;
+    .el-tooltip__popper {
+      word-break: break-all;
+      max-width: 96vw;
+    }
+}
+span {
+    display: inline-block;
+}
+.courseware {
+    .video {
+        .el-upload-dragger {
+            width: 300px;
+            height: 137px;
+            margin-right: 30px;
+            .el-icon-upload {
+                margin: 15px 0;
+            }
+        }
+        .upload-demo {
+            width: 320px;
+        }
+    }
+}
+.el-time-panel {
+    width: 150px !important;
+}
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#checkbox-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* stylelint-enable */
+.input-style .el-input__inner {
+    width: 250px;
+    height: 26px;
+}
+.input-style {
+    width: 250px;
+}
